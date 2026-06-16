@@ -22,10 +22,16 @@ while True:
     
     
 print("--- Fase de apuração ---")
+melhor_pontuacao = 0
+for i in votos_sabores:
+    if votos_sabores[i] > melhor_pontuacao:
+        melhor_pontuacao = votos_sabores[i]
+
 for i in range(len(votos_sabores)): 
     print(f"votos totais de {sabores_pizza[i]} {votos_sabores[i]}")
 print(f" votos no total (válidos): {votos_validos}")
 print(f"votos inválidos: {votos_invalidos}")
+print(f"O sabor mais votado foi o {melhor_pontuacao}")
 
     
     
