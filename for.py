@@ -4,7 +4,7 @@ maior_venda = 0
 soma_das_vendas = 0
 media_das_vendas = 0
 maior_total = 0
-melhor_do_dia =0
+funcionário_do_dia = 0
 
 for vendedor in range(equipe_tamanho):
     nome = input("Digite seu seu nome ")
@@ -22,7 +22,7 @@ for vendedor in range(equipe_tamanho):
             continue
         if melhor_do_dia > total_vendedores:
             total_vendedores = melhor_do_dia
-            nome = total_vendedores
+            funcionário_do_dia= total_vendedores
     
     soma_das_vendas = soma_das_vendas + total_vendedores 
     
@@ -34,4 +34,5 @@ print()
 print("--- Resultado relatório --- \n")
 print()
 print("Total de vendas foi: ", soma_das_vendas,"\n")
-print(f"o Melhor funcionário foi {nome}")
+print(f"o Melhor funcionário da semana foi {nome}")
+print(f"o melhor do dia foi{funcionário_do_dia}")
