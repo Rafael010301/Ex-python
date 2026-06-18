@@ -101,5 +101,3 @@ while True:
         else: 
             print("NÃO TEM NINGUÉM NA LISTA AINDA ")
             print()
-
-
